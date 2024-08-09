@@ -1,0 +1,130 @@
+.cards-wrapper {
+  height: 518px;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767.5px) {
+  .cards-wrapper {
+    width: 100%;
+  }
+}
+
+.credit-card {
+  width: 300px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit-card .cardElement {
+  background-color: gray;
+  width: 90%;
+  height: 180px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit-card.one .cardElement {
+  background-color: red;
+}
+.credit-card.one .cardContent {
+  color: red;
+}
+
+.credit-card.two .cardElement {
+  background-color: green;
+}
+.credit-card.two .cardContent {
+  color: green;
+}
+
+.credit-card.three .cardElement {
+  background-color: yellow;
+}
+.credit-card.three .cardContent {
+  color: yellow;
+}
+
+.credit-card.four .cardElement {
+  background-color: blue;
+}
+.credit-card.four .cardContent {
+  color: blue;
+}
+
+.credit-card.five .cardElement {
+  background-color: gray;
+}
+.credit-card.five .cardContent {
+  color: gray;
+}
+
+.credit-card.six .cardElement {
+  background-color: purple;
+}
+.credit-card.six .cardContent {
+  color: purple;
+}
+
+.credit-card.seven .cardElement {
+  background-color: orange;
+}
+.credit-card.seven .cardContent {
+  color: orange;
+}
+
+.credit-card.eight .cardElement {
+  background-color: silver;
+}
+.credit-card.eight .cardContent {
+  color: silver;
+}
+
+.credit-card.nine .cardElement {
+  background-color: goldenrod;
+}
+.credit-card.nine .cardContent {
+  color: goldenrod;
+}
+
+.cards-wrapper .swiper-slide {
+  opacity: 0;
+}
+
+.cards-wrapper .swiper-slide-prev {
+  opacity: 0;
+}
+
+.cards-wrapper .swiper-slide-active {
+  transform: translateY(26px) scale(0.8) !important;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.cards-wrapper .swiper-slide-next {
+  transform: translateY(-102px) scale(0.9) !important;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.cards-wrapper .swiper-slide-next + .swiper-slide {
+  transform: translateY(-230px) scale(1) !important;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.cards-wrapper
+  .swiper-slide
+  .cardContent:not(.cards-wrapper .swiper-slide-next + * .cardContent) {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
