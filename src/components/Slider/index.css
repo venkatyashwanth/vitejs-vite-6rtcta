@@ -107,19 +107,19 @@
 .cards-wrapper .swiper-slide-active {
   transform: translateY(26px) scale(0.8) !important;
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: opacity 0.8s;
 }
 
 .cards-wrapper .swiper-slide-next {
   transform: translateY(-102px) scale(0.9) !important;
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: opacity 0.8s;
 }
 
 .cards-wrapper .swiper-slide-next + .swiper-slide {
   transform: translateY(-230px) scale(1) !important;
   opacity: 1;
-  transition: all 0.3s;
+  transition: all 0.8s;
 }
 
 .cards-wrapper
